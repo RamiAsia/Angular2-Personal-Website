@@ -1,0 +1,72 @@
+.info-component {
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+    border-radius: 0px;
+    width: 100%;
+/*    height: auto;   */
+    -webkit-transition: background 2s; /* Safari */
+    transition: background 2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    overflow: inherit;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+}
+
+.info-item {
+    position: relative;
+    float: left;
+    margin:auto;
+    height: auto;
+    color:white;
+}
+
+.info-container {
+    margin: auto; 
+    width: 100%;
+}
+
+@media screen and (max-width: 1123px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+    .info-container {
+        text-align: center;
+        margin: auto; 
+        width: 100%;
+        
+    }
+  .info-component {
+/*        display: inline-block;*/
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        border-radius: 0px;
+        width: 100%;
+    /*    height: auto;   */
+        -webkit-transition: background 2s; /* Safari */
+        transition: background 2s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        overflow: inherit;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+    }
+    
+    .badge-logo {
+        display: block;
+        margin:auto;
+        text-align: center;
+    }
+    
+    .info-item {
+        display: block;
+        float: none;
+        text-align: center;
+        margin:auto;
+        height: auto;
+        padding: 3px;
+        color:white;
+    }
+}

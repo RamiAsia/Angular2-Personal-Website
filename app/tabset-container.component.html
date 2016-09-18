@@ -1,0 +1,23 @@
+<div class="tabset-container">
+    <tabset>
+    	<tab heading="Projects">
+	    	<ul class="polaroid-list">
+	    		<li class="polaroid-li" *ngFor="let project of projects">
+					<a target="_blank" href="{{project.project_link}}">
+                        <polaroid [imgLink]="project.img_src" [caption]="project.name + ': ' + project.description"></polaroid>
+                    </a>
+				</li>
+			</ul>
+    	</tab>
+        <!-- <tab heading="Technologies">Sheeee</tab> -->
+        <tab heading="Hobbies">
+            <ul class="polaroid-list">
+                <li class="polaroid-li" *ngFor="let project of hobbies">
+                    <a target="_blank" href="{{project.project_link}}">
+                        <polaroid [imgLink]="project.img_src" [caption]="project.name + ': ' + project.description"></polaroid>
+                    </a>
+                </li>
+            </ul>
+        </tab>
+    </tabset>
+</div>

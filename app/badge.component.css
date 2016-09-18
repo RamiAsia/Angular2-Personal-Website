@@ -1,0 +1,44 @@
+.badge-img {
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+	-webkit-border-radius: 125px;
+	-moz-border-radius: 125px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+    overflow: scroll;
+    margin: 1em;
+    -webkit-transition: box-shadow 1s; /* Safari  */
+    transition: box-shadow 1s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    padding: 5px;
+    background-color: white;
+}
+
+.badge-img:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 204, 0.8);
+	-webkit-box-shadow: 0 0 10px rgba(255, 255, 204, 0.8);
+	-moz-box-shadow: 0 0 10px rgba(255, 255, 204, 0.8);
+}
+
+@media screen and (max-width: 1123px) {    
+    .badge-img {
+        width: 200px;
+        height: 200px;
+        
+    }
+    
+    .info-item {
+        display: inline-block;
+        margin:auto;
+        text-align: center;
+    }
+    
+    .badge-logo {
+        display: block;
+        margin:auto;
+        text-align: center;
+    }
+}

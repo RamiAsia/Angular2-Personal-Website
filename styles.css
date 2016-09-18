@@ -1,0 +1,197 @@
+body {
+	background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+#toolbar {
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 5em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: light-gray;
+    -webkit-transition: background 2s; /* Safari */
+    transition: background 2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    
+    list-style-type: none;
+    overflow: hidden;
+}
+
+
+.toolbar-item {
+    color: white;
+}
+
+.toolbarholder {
+	width: 100%;
+	height: 4em;
+}
+
+.info-component {
+    display: inline-block;
+    margin: auto;
+    padding: auto;
+    border-radius: 0px;
+    width: 100%;
+/*    height: auto;   */
+    -webkit-transition: background 2s; /* Safari */
+    transition: background 2s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    overflow: inherit;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+	-webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+}
+
+.info-item {
+    position: relative;
+    float: left;
+    margin:auto;
+    height: auto;
+    color:white;
+}
+
+.info-container {
+    margin: auto; 
+    width: 100%;
+    background-color: #4d79ff;
+}
+
+.tabset-container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+}
+
+.tab-content {
+    padding: 10px;
+}
+
+.polaroid-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.polaroid-shell {
+    display: inline-block;
+    position: relative;
+  width: 280px;
+  height: 280px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+.polaroid-img-container {
+    width:280px;
+    height:230px;
+    line-height: 165px;
+}
+
+.polaroid-img {
+    width: 100%;
+    height:auto;
+    vertical-align: middle;
+}
+
+.polaroid-text-container {
+    position: absolute;
+
+    bottom: 0px;
+    width: 100%;
+  text-align: center;
+  padding: 5px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.polaroid-li {
+    display: inline;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1123px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+    .info-container {
+        text-align: center;
+        margin: auto; 
+        width: 100%;
+        
+    }
+  .info-component {
+/*        display: inline-block;*/
+        text-align: center;
+        margin: auto;
+        padding: auto;
+        border-radius: 0px;
+        width: 100%;
+    /*    height: auto;   */
+        -webkit-transition: background 2s; /* Safari */
+        transition: background 2s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        overflow: inherit;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        -webkit-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+        -moz-box-shadow: 0 0 18px rgba(0, 0, 0, 0.8);
+    }
+    
+    .badge-logo {
+        display: block;
+        margin:auto;
+        text-align: center;
+    }
+    
+    .info-item {
+        display: block;
+        float: none;
+        text-align: center;
+        margin:auto;
+        height: auto;
+        padding: 3px;
+        color:white;
+    }
+    
+    .tabset-container {
+        width: 95%;
+    }
+
+    tab {
+        text-align: center; 
+    }
+
+
+
+
+}
+
+@media screen and (min-width: 1123px) {
+    .badge-logo {
+        padding-right: 50px;
+        padding-left: 100px;
+    }
+
+    #info-details {
+        padding-top: 95px;
+        /*text-align: center;*/
+    }
+
+    .polaroid-shell {
+        display: inline-block;
+        position: relative;
+        width: 280px;
+        height: 280px;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 25px;
+        margin-left: 25px;
+    }
+}
